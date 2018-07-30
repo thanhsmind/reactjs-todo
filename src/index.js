@@ -19,7 +19,7 @@ const enhancer = compose(
 );
 
 // initialState
-const initialState = {}
+const initialState = {todos: []};
 
 // Create store
 const store = createStore(rootReducer, initialState, enhancer);
