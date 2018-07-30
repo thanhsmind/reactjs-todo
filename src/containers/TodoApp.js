@@ -7,7 +7,11 @@ import * as TodoActions from '../actions/TodoActions';
 
 class TodoApp extends Component {
     render() {
-        const { todos, actions } = this.props;
+        let { todos,  actions } = this.props;
+        
+        if(undefined === todos){
+            todos = [];
+        }
 
         return (
             <div>

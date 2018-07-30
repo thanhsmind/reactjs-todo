@@ -19,7 +19,7 @@ const enhancer = compose(
 );
 
 // initialState
-const initialState = {todos: []};
+const initialState = {};
 
 // Create store
 const store = createStore(rootReducer, initialState, enhancer);
@@ -27,7 +27,7 @@ const store = createStore(rootReducer, initialState, enhancer);
 const appRoot = (
     <Provider store={store}>
         <div>
-            <TodoApp />
+            <TodoApp  />
             <DevTools />
         </div>
     </Provider>
